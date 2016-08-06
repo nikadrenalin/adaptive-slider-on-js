@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>app</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    
+
+    <link rel="stylesheet" href="styles/main.css">
+    
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    
+    <div class="wrapper">
+    	<section class="container">
+    		<div class="header clearfix">
+    			<div class="logo">What’s on</div>
+    			<form action="#">
+    				<fieldset>
+    					<input type="submit" value="Search">
+    					<label for="fromData">
+    						<span>From</span>
+    						<input type="text" id="fromData" value="21. feb 2010">
+    					</label>
+    					<label for="toData">
+    						<span>To</span>
+    						<input type="text" id="toData" value="29. feb 2010">
+    					</label>
+    				</fieldset>
+    			</form>
+    		</div>
+    		<div class="slider">
+    			<div class="left" onclick="slider.left()"></div>
+    			<div class="right" onclick="slider.right()"></div>
+    			<ul class="slides" id="slider"></ul>
+    		</div><!-- slider -->
+    	</section><!-- container -->
+    </div> <!-- wrapper -->
+    
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    
+    
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
